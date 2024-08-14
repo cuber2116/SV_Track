@@ -1,4 +1,4 @@
-// Ripple Carry Adders
+// Ripple Carry Adder
 module RCA_1(input logic [3:0] A, B, input logic Cin, output logic Cout, output logic[3:0] S);
 
 logic c1, c2, c3;
