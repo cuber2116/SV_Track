@@ -16,14 +16,6 @@ NOT Bb1(B[1], Bb[1]);
 NOT Bb2(B[2], Bb[2]);
 NOT Bb3(B[3], Bb[3]);
 RCA_1 M(A, Bb,  cin, carry, Y);
-initial begin
-	if(carry == 1) begin
-		$display("Positive output");
-	end
-	else begin
-		$display("Negative output");
-	end
-end
 assign carry_4bits = {3'b0, carry};
 RCA_1 M1(Y, zero, carry_4bits, cout, S);
 endmodule
